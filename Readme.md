@@ -1,5 +1,7 @@
 # js-squares-hull-2d
 
+Calculate the outer hull of a 2d matrix of same size, touching squares
+
 ## Install
 
 ```bash
@@ -33,6 +35,20 @@ console.log(hull);
   { x: 2, y: 2 },
   { x: 0, y: 2 }
 ] */
+```
+
+## Values
+
+This library does not care about the values in the matrix as long as they're `truthy`.
+The examples on this page and the spec uses `"█▌"` for symbolic representation.
+
+In real projects this is meant to work with game elements in the matrix.
+
+```ts
+import type { Matrix } from 'js-squares-hull-2d';
+import { Element } from './myGame';
+
+const matrix: Matrix<Element> = [[new Element({ color: 'blue', mass: 5 })]];
 ```
 
 ## Optimizations
