@@ -1,5 +1,5 @@
 {
-  "name": "js-squares-hull-2d",
+  "name": "squares-hull-2d",
   "version": "0.1.0",
   "description": "Calculate the outer hull of a 2d matrix of same size, touching squares",
   "main": "dist/index.js",

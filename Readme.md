@@ -1,18 +1,18 @@
-# js-squares-hull-2d
+# squares-hull-2d
 
 Calculate the outer hull of a 2d matrix of same size, touching squares
 
 ## Install
 
 ```bash
-npm i js-squares-hull-2d
-# yest add js-squares-hull-2d
+npm i squares-hull-2d
+# yest add squares-hull-2d
 ```
 
 ## Usage
 
 ```ts
-import getHull, { Matrix } from 'js-squares-hull-2d';
+import getHull, { Matrix } from 'squares-hull-2d';
 
 /* 0  1 2 x
    1 █▌
@@ -45,7 +45,7 @@ The examples on this page and the spec uses `"█▌"` for symbolic representati
 In real projects this is meant to work with game elements in the matrix.
 
 ```ts
-import type { Matrix } from 'js-squares-hull-2d';
+import type { Matrix } from 'squares-hull-2d';
 import { Element } from './myGame';
 
 const matrix: Matrix<Element> = [[new Element({ color: 'blue', mass: 5 })]];
@@ -74,7 +74,7 @@ Meaning this hull will never be produced
 ### 2. Long borders sub-points are removed
 
 ```ts
-import getHull from 'js-squares-hull-2d';
+import getHull from 'squares-hull-2d';
 
 console.log(getHull([['█▌', '█▌', '█▌']]));
 /* [
@@ -90,7 +90,7 @@ Note the absence of points `{ x: 1, y: 0 }`, `{ x: 2, y: 0 }` etc..
 ### 3. Falsy values are ignored
 
 ```ts
-import getHull from 'js-squares-hull-2d';
+import getHull from 'squares-hull-2d';
 
 /* 0  1 2 x
    1   █▌
