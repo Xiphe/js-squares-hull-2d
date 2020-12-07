@@ -1,0 +1,38 @@
+{
+  "name": "js-squares-hull-2d",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "tsc"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "clearMocks": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Xiphe/js-squares-hull-2d.git"
+  },
+  "keywords": [
+    "squares",
+    "matrix",
+    "hull",
+    "game",
+    "2d",
+    "body"
+  ],
+  "author": "Hannes Diercks <node@xiphe.net> (https://xiphe.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xiphe/js-squares-hull-2d/issues"
+  },
+  "homepage": "https://github.com/Xiphe/js-squares-hull-2d#readme",
+  "devDependencies": {
+    "@types/jest": "26.0.16",
+    "jest": "26.6.3",
+    "ts-jest": "26.4.4",
+    "typescript": "4.1.2"
+  }
+}
